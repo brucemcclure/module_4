@@ -17,3 +17,5 @@
 
 let students = [];
 students.push("Sarah");
+
+console.log(students)
