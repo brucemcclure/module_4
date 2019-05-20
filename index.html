@@ -8,24 +8,33 @@
 </head>
 <body>
     <script>
-        function Hero(name, level) {
-            this.name = name;
-            this.level = level;
-            this.shout = function() {
-                return `my name is ${this.name}`;
+
+    // Given a string, use your favourite javascript loop to capitalise the first letter of each word, 
+    // whilst making each other letter lowercase.
+
+    let exampleString = "ThiS IS an EXAMPLE striNG";
+    
+    let answer = [];
+    let final  = "";
+    //Lowercase every letter.
+    //capitalizer first letter and every letter after a space. 
+    split = exampleString.split(" ");                           // BReaks up the string into an array of words. 
+
+
+    for (let value of split) {
+        for (let i = 0; i < value.length; i ++) {
+            if (i === 0) {
+                answer.push(value[i].toUpperCase());
+            }
+            else {
+                answer.push(value[i].toLowerCase());
             }
         }
+        answer.push(" ");
+    }
+    answer.pop();
 
-        function Villian(name, level) {
-            this.name = name;
-            this.level = level;
-            
-        }
-
-        Villian.prototype.shout = function() {
-            return `my name is ${this.name}`;
-        }
-    
+    console.log(answer.join(""));
 
     </script>
 </body>
