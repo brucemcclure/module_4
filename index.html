@@ -9,32 +9,33 @@
 <body>
     <script>
 
-    // Given a string, use your favourite javascript loop to capitalise the first letter of each word, 
-    // whilst making each other letter lowercase.
+        let atomicBlonde = 123;
+            atomicBlonde = atomicBlonde.toString();
+        let atomicBlondeArray = atomicBlonde.split("");
+        let atomicBlondeArrayLength = atomicBlondeArray.length;
+        let arrayOfNumbers = [];
+        let sumOfArrayOfNumbers = 0;
+        let productOfArrayOfNumbers = 1;
 
-    let exampleString = "ThiS IS an EXAMPLE striNG";
-    
-    let answer = [];
-    let final  = "";
-    //Lowercase every letter.
-    //capitalizer first letter and every letter after a space. 
-    split = exampleString.split(" ");                           // BReaks up the string into an array of words. 
-
-
-    for (let value of split) {
-        for (let i = 0; i < value.length; i ++) {
-            if (i === 0) {
-                answer.push(value[i].toUpperCase());
-            }
-            else {
-                answer.push(value[i].toLowerCase());
-            }
+        for (i = 0; i < atomicBlondeArrayLength; i ++) {
+            arrayOfNumbers.push(Number(atomicBlondeArray[i]));
         }
-        answer.push(" ");
-    }
-    answer.pop();
+    
+        for (let value of arrayOfNumbers) {
+            sumOfArrayOfNumbers += value;
+        }
 
-    console.log(answer.join(""));
+        for (let value of arrayOfNumbers) {
+            productOfArrayOfNumbers *= value;
+        }
+        
+        if (sumOfArrayOfNumbers === productOfArrayOfNumbers) {
+            console.log("This is an atomicBlonde")
+        } else {
+            console.log("This is NAAAAAAAAAAAATTT one")
+        }   
+        
+
 
     </script>
 </body>
