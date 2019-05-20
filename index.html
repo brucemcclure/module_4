@@ -8,18 +8,14 @@
 </head>
 <body>
     <script>
-
-        let number = 1;
-
-        switch (number){
-            case 1: 
-            case 2: console.log("Its a two");
-            break;
-            case 3: console.log("Its a three");
-            break;
-            default:
-            console.log("Its none of these");
+        let user = "tom";
+        let answer = prompt("What is your name?")
+        if (answer === user){
+            console.log("Hello Tom")
+        } else {
+            console.log("Hello Not Tom")
         }
+
 
     </script>
 </body>
