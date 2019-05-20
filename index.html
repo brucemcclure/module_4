@@ -8,14 +8,24 @@
 </head>
 <body>
     <script>
-        let user = "tom";
-        let answer = prompt("What is your name?")
-        if (answer === user){
-            console.log("Hello Tom")
-        } else {
-            console.log("Hello Not Tom")
+        function Hero(name, level) {
+            this.name = name;
+            this.level = level;
+            this.shout = function() {
+                return `my name is ${this.name}`;
+            }
         }
 
+        function Villian(name, level) {
+            this.name = name;
+            this.level = level;
+            
+        }
+
+        Villian.prototype.shout = function() {
+            return `my name is ${this.name}`;
+        }
+    
 
     </script>
 </body>
