@@ -7,11 +7,7 @@ using ternary operator.
 "use strict";
 
 function isNumber(a) {
-    if (typeof a === "number") {
-        return "That's number";
-    } else {
-        return "That's not a number";
-    }
+     (typeof a === "number") ? console.log("That's number") : console.log("That's not a number");
 }
 
 console.log(isNumber(10));

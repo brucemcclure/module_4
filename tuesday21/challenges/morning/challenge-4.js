@@ -8,13 +8,14 @@ Error after the line 19 should still be generated.
 
 let a = 5;
 let b = 10;
+let c = 2;
 
 if (b > a) {
     c = a + b + c;
-    let c = 2;
+    
     console.log(c);
 // BEFORE: Uncaught ReferenceError: c is not defined
 // AFTER: 17
 }
-console.log(c);
+console.log(c);                                                 // They WANT this error?!
 // Uncaught ReferenceError: c is not defined
