@@ -7,7 +7,7 @@ Change code to match output.
 
 var i = 10;
 
-for (var i = 0; i < 10; i++) {                  //Change 5 to 10
+for (var i = 0; i < 5; i++) {                  //Change 5 to 10 also change the var to a let so that it is different 
 // some stuff
     console.log(i);
 }

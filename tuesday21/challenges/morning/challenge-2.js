@@ -3,7 +3,7 @@
 /* 
 CHALLENGE 2
 Answer following Qustions:
-1. Why no error is generated after the line 14?             //Const does not throw an error when it is changed
+1. Why no error is generated after the line 14?             //Const does not throw an error when it is mutated
 2. Why after the line 19 TypeError is generated?            //arr is defaulted to var they are therefore different vars
 Change one line of code so, that error will go away.
 Don't change lines 14, 19.
