@@ -1,6 +1,6 @@
 console.log("Mr pickles the corgi");
 
-class Rectangle {
+class Shape {
     constructor(height, width) {
         this.height = height;
         this.width = width;
@@ -9,6 +9,10 @@ class Rectangle {
     area() {
        return this.height * this.width;
     }
+
+    static measurement() {                      // static key word to have class level method
+        return "cm";
+    }
 }
 
-let rect = new Rectangle(20, 10);
+let rect = new Shape(20, 10);
