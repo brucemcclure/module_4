@@ -1,23 +1,10 @@
 console.log("Mr pickles the corgi");
 
-class Shape {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
+function parentFunc(a) {
+    let b = 1;
 
-    area() {
-       return this.height * this.width;         // Object level measurement
+    function nestedFunc(a, b) {
+        return a + b;
     }
-
-    static measurement() {                      // static key word to have class level method
-        return "cm";
-    }
+    return nestedFunc(a, b);
 }
-
-
-class Square extends Shape {
-
-}
-
-let sq = new Square(20, 10);
