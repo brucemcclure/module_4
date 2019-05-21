@@ -7,7 +7,7 @@ class Shape {
     }
 
     area() {
-       return this.height * this.width;
+       return this.height * this.width;         // Object level measurement
     }
 
     static measurement() {                      // static key word to have class level method
@@ -15,4 +15,9 @@ class Shape {
     }
 }
 
-let rect = new Shape(20, 10);
+
+class Square extends Shape {
+
+}
+
+let sq = new Square(20, 10);
