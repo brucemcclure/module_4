@@ -1,10 +1,7 @@
 console.log("Mr pickles the corgi");
 
-function parentFunc(a) {
-    let b = 1;
-
-    function nestedFunc(a, b) {
+function adder (a) {
+    return function(b) {
         return a + b;
     }
-    return nestedFunc(a, b);
 }
