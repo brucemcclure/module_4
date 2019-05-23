@@ -1,14 +1,19 @@
 document.write("Mr Pickles the corgi")
 
-function adder(x,y, callback) {
-    let answer = x + y;
+document.getElementById("button").addEventListener("click", () => {
+    wait(5000);
+    alert("Ran!");
+});
 
-    if (callback){
-        return callback(answer);
-    }
-    return answer;
-}
 
-    function shoutSomething(input) {
-        console.log(`${input}!!!!!`);
-    }
+// function wait(ms) {
+    // let start = Date.now();
+    // let now = start;
+// 
+    // while(now - start < ms) {
+        // now = Date.now();
+    // }
+// }
+// 
+// wait(3000);
+// console.log("Finished");
