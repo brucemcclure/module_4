@@ -11,7 +11,29 @@
     <button id="button">Click Me!</button>
 
     <script>
+        let x = 1;
+        let y = 2;
         
+        let calculation = new Promise ((resolve, reject) => {
+            let answer = x+y;
+
+            if (isNaN(answer)){
+               return reject("Input needs to be numbers");
+            }
+
+            console.log("Was it rejected?");
+            return resolve(answer);
+        });
+
+        calculation
+            .then((data) => {
+                console.log(data);
+                })
+            .catch((err) =>{
+                console.log(err);
+                });                        //then = successful catch = error
+                
+        console.log(1);
     </script>
 
     
