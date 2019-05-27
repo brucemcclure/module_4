@@ -11,29 +11,28 @@
     <button id="button">Click Me!</button>
 
     <script>
-        let x = 1;
-        let y = 2;
-        
-        let calculation = new Promise ((resolve, reject) => {
-            let answer = x+y;
+        // get more useful when adding a second layer of abstraction. 
 
-            if (isNaN(answer)){
-               return reject("Input needs to be numbers");
-            }
+        function adder(x, y) {
+            return new Promise((resolve, reject) => {
+                let answer = x + y;
 
-            console.log("Was it rejected?");
-            return resolve(answer);
+                if (isNaN(answer)) {
+                    return reject("Not a Number");
+                }
+
+                return resolve(answer);
         });
+        }
 
-        calculation
+        (adder(3, "Jo")
             .then((data) => {
                 console.log(data);
-                })
-            .catch((err) =>{
-                console.log(err);
-                });                        //then = successful catch = error
-                
-        console.log(1);
+            })
+            .catch((err) => {
+                console.log(error);
+            });
+
     </script>
 
     
